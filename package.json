@@ -1,0 +1,31 @@
+{
+  "name": "rutatech",
+  "version": "1.0.0",
+  "description": "CLI para ayudar a jóvenes a explorar su vocación tecnológica",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "rutatech": "./bin/index.js"
+  },
+  "scripts": {
+    "start": "node ./bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vocación",
+    "tecnología",
+    "educación",
+    "carrera",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "boxen": "^7.1.1",
+    "figlet": "^1.7.0"
+  }
+}
