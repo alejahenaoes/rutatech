@@ -58,7 +58,7 @@ npm start -- [comando]
 
 ## Preview:
 
-![RutaTech CLI preview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k5hn0ja1awu4vl21uoz1.png)
+![RutaTech CLI preview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8dze6q2jhr3xksq1sc85.png)
 
 
 # How I Used Amazon Q Developer
