@@ -1,94 +1,124 @@
-# RutaTech
+# RutaTech CLI
+Is a command-line tool built with Node.js and Amazon Q Developer that helps users - especially students, career changers, and curious adults - explore paths in technology through a personalized, interactive experience.
 
-CLI para ayudar a jóvenes a explorar su vocación tecnológica.
+This tool transforms the question *"What career in technology is right for me?* into a conversation in the Amazon Q-powered CLI. Users can:
 
-## Descripción
+- 📝 Take a quiz to identify skills.
+- 🧩 Get AI-generated learning paths
+- 💡 Find real opportunities (bootcamps, scholarships, jobs)
+- ❤️ Discover inspiring stories from technology professionals
+- 🤩 Explore interactive challenges
+- 🤝 Match personal interests with relevant technology roles
 
-RutaTech es una herramienta de línea de comandos diseñada para guiar a jóvenes en su exploración vocacional en el campo de la tecnología. Ofrece tests vocacionales, rutas de aprendizaje personalizadas, oportunidades actuales, historias inspiradoras y retos prácticos.
+This isn't just a script - it's a smart, modular career companion on your terminal. Built with the Amazon Q Developer CLI, it's an unexpected use case that goes beyond code and really helps.
 
-## Instalación
+### Why it's important
+
+There is a big gap between interest in technology and actual direction - especially for people without mentors or exposure to real technology applications. RutaTech CLI makes exploring this world easier, more engaging, and available directly from the terminal - without a browser.
+
+# Demo
+
+## Installation
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/tu-usuario/rutatech.git
 cd rutatech
 
-# Instalar dependencias
+#  Install dependencies
 npm install
 
-# Instalar globalmente (opcional)
+# Install globally (optional)
 npm install -g .
 ```
 
-## Uso
+## Use
 
 ```bash
-# Si está instalado globalmente
+# If installed globally
 rutatech [comando]
 
-# Si no está instalado globalmente
+# If not globally installed
 npm start -- [comando]
 ```
 
-## Comandos disponibles
+## Available Commands
 
-- `start`: Inicia el test vocacional
-- `roadmap`: Muestra una ruta de aprendizaje sugerida
-  - Opciones: `--area <area>` - Área específica de tecnología
-- `oportunidades`: Lista oportunidades actuales
-  - Opciones: `--tipo <tipo>` - Tipo de oportunidad (trabajo, estudio, voluntariado)
-- `historias`: Muestra historias inspiradoras
-  - Opciones: `--categoria <categoria>` - Categoría de historias
-- `retos`: Presenta retos prácticos
-  - Opciones: `--nivel <nivel>` - Nivel de dificultad (principiante, intermedio, avanzado)
-  - Opciones: `--tecnologia <tecnologia>` - Tecnología específica
-- `explora`: Permite combinar intereses para descubrir caminos nuevos
+- `start`: Starts the vocational test
+- `roadmap`: Displays a suggested learning route
+  - Opciones: `--area <area>` - Specific area of technology
+- `oportunidades`: Lists current opportunities
+  - Opciones: `--tipo <tipo>` -  Type of opportunity (work, study, volunteer)
+- `historias`: Displays inspiring stories
+  - Opciones: `--categoria <categoria>` - Category of stories
+- `retos`: Show practical challenges
+  - Opciones: `--nivel <nivel>` - Difficulty level (beginner, intermediate, advanced).
+  - Opciones: `--tecnologia <tecnologia>` - Specific technology.
+- `explora`: Allows you to combine interests to discover new paths.
 
-## Ejemplos
+## Preview:
+
+![RutaTech CLI preview](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k5hn0ja1awu4vl21uoz1.png)
+
+
+# How I Used Amazon Q Developer
+
+Amazon Q Developer CLI was the basis of this whole project. I used it to:
+
+- Define the Node.js CLI architecture. 
+- Generate each feature module with clear directions (vocational questionnaire, roadmap builder, etc.).
+- Rapidly prototype features and get refactoring suggestions
+- Automate repetitive logic and improve error handling
+- Interactive brainstorming on UX edge cases and details.
+
+Instead of jumping from tool to tool, I was able to stay in the CLI and iterate conversationally. Amazon Q validated structure, logic and wrote clean, maintainable code faster than I could have done it alone.
+
+
+## Examples
 
 ```bash
-# Iniciar el test vocacional
+# Start vocational test
 rutatech start
 
-# Ver roadmap de desarrollo web
+# See web development roadmap
 rutatech roadmap --area desarrollo_web
 
-# Listar oportunidades de estudio
+# List study opportunities
 rutatech oportunidades --tipo estudio
 
-# Ver historias de superación
+# See stories of overcoming
 rutatech historias --categoria superacion
 
-# Encontrar retos de nivel principiante en JavaScript
+# Finding beginner-level challenges in JavaScript
 rutatech retos --nivel principiante --tecnologia javascript
 
-# Explorar caminos tecnológicos basados en intereses
+# Exploring interest-based technology pathways
 rutatech explora
 ```
 
-## Estructura del proyecto
+## Project structure
 
 ```
 rutatech/
-├── bin/                  # Punto de entrada de la CLI
+├── bin/                  # CLI entry point
 ├── src/
-│   ├── commands/         # Implementación de comandos
-│   ├── data/             # Datos y contenido
-│   └── utils/            # Utilidades y helpers
+│   ├── commands/         # Command implementation
+│   ├── data/             # Data and content
+│   └── utils/            # Utilities and helpers
 ├── package.json
 └── README.md
 ```
 
-## Contribuir
+## Contribute 🤩
 
-Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
+Contributions are welcome. Please follow these steps:
 
-1. Haz fork del repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/amazing-feature`)
-3. Haz commit de tus cambios (`git commit -m 'Add some amazing feature'`)
-4. Push a la rama (`git push origin feature/amazing-feature`)
-5. Abre un Pull Request
+1. Fork the repository
+2. Create a branch for your feature (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+This project is licensed under the MIT License - see the LICENSE file for details.
